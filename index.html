@@ -3,65 +3,313 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Vásquez | High Jump Athlete</title>
+<title>Juan Vásquez | Atleta de Salto Alto</title>
 
-</section>
 <style>
-    .galeria{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    justify-content:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.galeria img{
-    width:300px;
-    border-radius:15px;
-    transition:0.3s;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
 }
 
-.galeria img:hover{
-    transform:scale(1.05);
-}
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
-}
-
-header{
-    text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(to bottom, #000, #222);
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-bottom: 3px solid #ffd700;
+    position: relative;
+    overflow: hidden;
 }
 
-h1{
-    font-size:3rem;
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+    pointer-events: none;
 }
 
-.hero{
-    max-width:900px;
-    margin:auto;
+.hero {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
-.section{
-    padding:50px 20px;
-    max-width:1000px;
-    margin:auto;
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
 }
 
-.card{
-    background:#1b1b1b;
-    padding:20px;
-    border-radius:15px;
-    margin-top:20px;
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#000;
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 30px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    color: #ffd700;
+    font-weight: 700;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card {
+    background: linear-gradient(135deg, #1b1b2f 0%, #16213e 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ffd700;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+.card p {
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+/* Gallery Section */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.galeria-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    background: #1b1b2f;
+    height: 280px;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #16213e 0%, #1b1b2f 100%);
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Achievements */
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.achievement-item {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.achievement-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    background: linear-gradient(135deg, #1b1b2f 0%, #16213e 100%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-color: #ffd700;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-item a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #ffed4e;
+    text-decoration: underline;
+}
+
+.contact-label {
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    border-top: 3px solid #ffd700;
+    color: #888;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 60px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
@@ -71,73 +319,135 @@ footer{
 <header>
 <div class="hero">
 <h1>Juan Vásquez</h1>
-<h2>High Jump Athlete 🇨🇴</h2>
+<h2>🇨🇴 Atleta de Salto Alto</h2>
 
-<p>
-🏆 Marca Personal: 2.04 m<br>
-📏 Estatura: 2.01 m<br>
-🎂 16/02/2007
-</p>
+<div class="stats">
+<div class="stat-item">
+<div class="stat-label">Marca Personal</div>
+<div class="stat-value">2.04 m</div>
+</div>
+<div class="stat-item">
+<div class="stat-label">Estatura</div>
+<div class="stat-value">2.01 m</div>
+</div>
+<div class="stat-item">
+<div class="stat-label">Edad</div>
+<div class="stat-value">16 años</div>
+</div>
+<div class="stat-item">
+<div class="stat-label">Fecha Nacimiento</div>
+<div class="stat-value">16/02/07</div>
+</div>
+</div>
 
-<p>
-"Just Do It"
-</p>
+<p class="quote">"Just Do It" 💪</p>
 </div>
 </header>
+
 <section class="section">
 <h2>Galería</h2>
 
 <div class="galeria">
-    <img src="salto204.jpg" alt="Salto">
-    <img src="Podio U23.jpeg" alt="Podio">
-    <img src="medalla.jpg" alt="Medalla">
-    <img src="competencia.jpg" alt="Competencia">
+    <div class="galeria-item">
+        <img src="salto204.jpg" alt="Salto 2.04m" style="display:none;">
+        <div class="galeria-placeholder">
+            <div style="font-size: 4rem;">📸</div>
+            <p>Reemplaza con tu foto</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">(salto204.jpg)</p>
+        </div>
+    </div>
+    <div class="galeria-item">
+        <img src="Podio U23.jpeg" alt="Podio U23" style="display:none;">
+        <div class="galeria-placeholder">
+            <div style="font-size: 4rem;">🥇</div>
+            <p>Podio en competencia</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">(Podio U23.jpeg)</p>
+        </div>
+    </div>
+    <div class="galeria-item">
+        <img src="medalla.jpg" alt="Medalla" style="display:none;">
+        <div class="galeria-placeholder">
+            <div style="font-size: 4rem;">🏅</div>
+            <p>Tus medallas</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">(medalla.jpg)</p>
+        </div>
+    </div>
+    <div class="galeria-item">
+        <img src="competencia.jpg" alt="Competencia" style="display:none;">
+        <div class="galeria-placeholder">
+            <div style="font-size: 4rem;">🏃</div>
+            <p>En competencia</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">(competencia.jpg)</p>
+        </div>
+    </div>
 </div>
 
 </section>
+
 <section class="section">
-<h2>Sobre mí</h2>
+<h2>Sobre Mí</h2>
 
 <div class="card">
-Soy Juan Vásquez, atleta colombiano especializado en salto alto.
-He sido campeón nacional U18 en dos ocasiones, subcampeón de Juegos Nacionales Juveniles,
-subcampeón Interclubes U20 y medallista nacional en diferentes campeonatos.
+<p>
+Soy Juan Vásquez, atleta colombiano especializado en salto alto. Con una marca personal de 2.04 metros, 
+he demostrado ser un competidor de alto nivel a nivel nacional. He sido campeón nacional U18 en dos ocasiones 
+y tengo una trayectoria destacada en competencias de élite. Mi dedicación, disciplina y pasión por el deporte 
+me impulsan a seguir mejorando y alcanzando nuevas metas en mi carrera atlética.
+</p>
 </div>
 </section>
 
 <section class="section">
-<h2>Logros</h2>
+<h2>Logros Destacados</h2>
 
-<div class="card">
-🥇 Campeón Nacional U18 (2 veces)<br>
-🥈 Subcampeón Juegos Nacionales Juveniles<br>
-🥈 Subcampeón Interclubes U20<br>
-🥈 Medallista Nacional categoría mayores<br>
-📈 Marca Personal: 2.04 m
+<div class="achievements">
+<div class="achievement-item">
+<div class="achievement-emoji">🥇</div>
+<p>Campeón Nacional U18<br><small>(2 veces)</small></p>
+</div>
+<div class="achievement-item">
+<div class="achievement-emoji">🥈</div>
+<p>Subcampeón Juegos Nacionales Juveniles</p>
+</div>
+<div class="achievement-item">
+<div class="achievement-emoji">🥈</div>
+<p>Subcampeón Interclubes U20</p>
+</div>
+<div class="achievement-item">
+<div class="achievement-emoji">📈</div>
+<p>Marca Personal: 2.04 m</p>
+</div>
 </div>
 </section>
 
 <section class="section">
-<h2>Entrenador y Clubes</h2>
+<h2>Entrenamiento</h2>
 
 <div class="card">
-👤 José Arturo Posada<br>
-🏃 Todomed<br>
-🏃 The Jumpers Club
+<p><strong>👤 Entrenador:</strong> José Arturo Posada</p>
+<p style="margin-top: 10px;"><strong>🏃 Clubes:</strong> Todomed, The Jumpers Club</p>
 </div>
 </section>
 
 <section class="section">
 <h2>Contacto</h2>
 
-<div class="card">
-📧 juanjosevasquez1313@gmail.com<br>
-📸 Instagram: @juanvasquezhj
+<div class="contact-grid">
+<div class="contact-item">
+<div class="contact-icon">📧</div>
+<div class="contact-label">Email</div>
+<a href="mailto:juanjosevasquez1313@gmail.com">juanjosevasquez1313@gmail.com</a>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📱</div>
+<div class="contact-label">Instagram</div>
+<a href="https://instagram.com/juanvasquezhj" target="_blank">@juanvasquezhj</a>
+</div>
 </div>
 </section>
 
 <footer>
-Juan Vásquez © 2026
+<p>Juan Vásquez © 2026 | Atleta de Salto Alto 🇨🇴</p>
 </footer>
 
 </body>
