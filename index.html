@@ -3,146 +3,346 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Vásquez | Atleta de Salto Alto</title>
-
+<title>Juan José Vásquez Giraldo | Atleta de Salto Alto</title>
+<meta name="description" content="Juan José Vásquez Giraldo - Atleta colombiano de salto alto. PB 2.06m. Camino a la élite mundial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<div class="hero">
-<h1>Juan Vásquez</h1>
-<h2>🇨🇴 Atleta de Salto Alto</h2>
+<!-- ===== NAV ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">JV<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="nav-link" data-nav>Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link" data-nav>Sobre mí</a></li>
+      <li><a href="#progresion" class="nav-link" data-nav>Progresión</a></li>
+      <li><a href="#galeria" class="nav-link" data-nav>Galería</a></li>
+      <li><a href="#logros" class="nav-link" data-nav>Logros</a></li>
+      <li><a href="#formacion" class="nav-link" data-nav>Formación</a></li>
+      <li><a href="#tecnica" class="nav-link" data-nav>Técnica</a></li>
+      <li><a href="#metas" class="nav-link" data-nav>Metas</a></li>
+      <li><a href="#contacto" class="nav-link" data-nav>Contacto</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="stats">
-<div class="stat-item">
-<div class="stat-label">Marca Personal</div>
-<div class="stat-value">2.06 m</div>
-</div>
-<div class="stat-item">
-<div class="stat-label">Estatura</div>
-<div class="stat-value">2.01 m</div>
-</div>
-<div class="stat-item">
-<div class="stat-label">Edad</div>
-<div class="stat-value">19 años</div>
-</div>
-<div class="stat-item">
-<div class="stat-label">Fecha Nacimiento</div>
-<div class="stat-value">16/02/07</div>
-</div>
-</div>
+<!-- ===== HERO ===== -->
+<header id="inicio">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-arc" viewBox="0 0 1200 400" preserveAspectRatio="none">
+      <path class="arc-path" d="M -50 380 Q 400 -80 850 380" />
+    </svg>
+  </div>
 
-<p class="quote">"Aprendiendo a volar mas alto " ✈️</p>
-</div>
+  <div class="hero">
+    <p class="hero-eyebrow reveal">🇨🇴 Salto Alto · Atletismo</p>
+    <h1 class="reveal">Juan José Vásquez Giraldo</h1>
+    <h2 class="reveal">Aprendiendo a volar más alto</h2>
+
+    <div class="stats reveal">
+      <div class="stat-item">
+        <div class="stat-value" data-count="2.06" data-decimals="2">0</div>
+        <div class="stat-label">Marca Personal (m)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" data-count="2.01" data-decimals="2">0</div>
+        <div class="stat-label">Estatura (m)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" data-count="19" data-decimals="0">0</div>
+        <div class="stat-label">Años</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value-static">16/02/07</div>
+        <div class="stat-label">Nacimiento</div>
+      </div>
+    </div>
+
+    <p class="quote reveal">"Aprendiendo a volar más alto" ✈️</p>
+
+    <a href="#progresion" class="scroll-cue reveal" aria-label="Ir a progresión">
+      <span></span>
+    </a>
+  </div>
 </header>
 
-<section class="section">
-<h2>Galería</h2>
+<!-- ===== SOBRE MÍ ===== -->
+<section class="section" id="sobre-mi">
+  <p class="eyebrow reveal">01 — Quién soy</p>
+  <h2 class="reveal">Sobre Mí</h2>
 
-<div class="galeria">
-    <div class="galeria-item">
-        <img src="assets/images/pb2.04.jpeg" alt="Salto 2.04m" >
-        <div class="galeria-placeholder">
-            <div style="font-size: 4rem;">📸</div>
-            <p>imagenes</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">(salto204.jpg)</p>
-        </div>
-    </div>
-    <div class="galeria-item">
-        <img src="assets/images/podio_u23.jpeg" alt="Podio U23" >
-        <div class="galeria-placeholder">
-            <div style="font-size: 4rem;">🥇</div>
-            <p>Podio en competencia</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">(Podio U23.jpeg)</p>
-        </div>
-    </div>
-    <div class="galeria-item">
-        <img src="assets/images/podio-mayores.jpeg" alt="Medalla">
-        <div class="galeria-placeholder">
-            <div style="font-size: 4rem;">🏅</div>
-            <p> Medallas</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">(medalla.jpg)</p>
-        </div>
-    </div>
-    <div class="galeria-item">
-        <img src="assets/images/u18.jpeg" alt="Competencia" >
-        <div class="galeria-placeholder">
-            <div style="font-size: 4rem;">🏃</div>
-            <p>En competencia</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">(competencia.jpg)</p>
-        </div>
-    </div>
-</div>
-
+  <div class="card card-wide reveal">
+    <p>
+      Soy Juan José Vásquez Giraldo, atleta colombiano especializado en salto alto. Con una marca
+      personal de 2.06 metros, he demostrado ser un competidor de alto nivel a nivel nacional. He sido
+      campeón nacional U18 en dos ocasiones y tengo una trayectoria destacada en competencias de élite.
+      Mi dedicación, disciplina y pasión por el deporte me impulsan a seguir mejorando y alcanzando
+      nuevas metas en mi carrera atlética — con la mirada puesta en la élite mundial.
+    </p>
+  </div>
 </section>
 
-<section class="section">
-<h2>Sobre Mí</h2>
+<!-- ===== PROGRESIÓN / LA BARRA (signature element) ===== -->
+<section class="section section-dark" id="progresion">
+  <p class="eyebrow reveal">02 — El objetivo</p>
+  <h2 class="reveal">La Barra</h2>
+  <p class="section-intro reveal">Cada centímetro es una temporada de trabajo. Esta es mi hoja de ruta hacia la élite mundial.</p>
 
-<div class="card">
-<p>
-Soy Juan Vásquez, atleta colombiano especializado en salto alto. Con una marca personal de 2.04 metros, 
-he demostrado ser un competidor de alto nivel a nivel nacional. He sido campeón nacional U18 en dos ocasiones 
-y tengo una trayectoria destacada en competencias de élite. Mi dedicación, disciplina y pasión por el deporte 
-me impulsan a seguir mejorando y alcanzando nuevas metas en mi carrera atlética.
-</p>
-</div>
+  <div class="bar-chart reveal" id="barChart">
+    <div class="bar-track">
+      <div class="bar-fill" id="barFill"></div>
+
+      <div class="bar-marker marker-current" style="--pos: 0%;">
+        <div class="marker-dot"></div>
+        <div class="marker-label">
+          <strong>2.06 m</strong>
+          <span>PB actual</span>
+        </div>
+      </div>
+
+      <div class="bar-marker" style="--pos: 30%;">
+        <div class="marker-dot"></div>
+        <div class="marker-label">
+          <strong>2.10 m</strong>
+          <span>Próxima meta · Nacional Mayores</span>
+        </div>
+      </div>
+
+      <div class="bar-marker" style="--pos: 78%;">
+        <div class="marker-dot"></div>
+        <div class="marker-label">
+          <strong>2.19 m</strong>
+          <span>Récord Nacional U20</span>
+        </div>
+      </div>
+
+      <div class="bar-marker marker-elite" style="--pos: 100%;">
+        <div class="marker-dot"></div>
+        <div class="marker-label">
+          <strong>2.20 – 2.25 m</strong>
+          <span>Élite mundial · Road to LA 2028</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-<h2>Logros Destacados</h2>
+<!-- ===== GALERÍA ===== -->
+<section class="section" id="galeria">
+  <p class="eyebrow reveal">03 — Momentos</p>
+  <h2 class="reveal">Galería</h2>
 
-<div class="achievements">
-<div class="achievement-item">
-<div class="achievement-emoji">🥇</div>
-<p>Campeón Nacional U18<br><small>(2 veces)</small></p>
-</div>
-<div class="achievement-item">
-<div class="achievement-emoji">🥈</div>
-<p>Subcampeón Juegos Nacionales Juveniles</p>
-</div>
-<div class="achievement-item">
-<div class="achievement-emoji">🥈</div>
-<p>Subcampeón Interclubes U20</p>
-</div>
-<div class="achievement-item">
-<div class="achievement-emoji">📈</div>
-<p>Marca Personal: 2.04 m</p>
-</div>
-</div>
+  <div class="galeria">
+    <div class="galeria-item reveal">
+      <img src="assets/images/pb2.04.jpeg" alt="Salto de 2.04m en competencia" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="galeria-placeholder">
+        <div class="ph-icon">📸</div>
+        <p>Salto 2.04 m</p>
+      </div>
+    </div>
+    <div class="galeria-item reveal">
+      <img src="assets/images/podio_u23.jpeg" alt="Podio en categoría U23" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="galeria-placeholder">
+        <div class="ph-icon">🥇</div>
+        <p>Podio U23</p>
+      </div>
+    </div>
+    <div class="galeria-item reveal">
+      <img src="assets/images/podio-mayores.jpeg" alt="Podio categoría Mayores" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="galeria-placeholder">
+        <div class="ph-icon">🏅</div>
+        <p>Podio Mayores</p>
+      </div>
+    </div>
+    <div class="galeria-item reveal">
+      <img src="assets/images/u18.jpeg" alt="Competencia categoría U18" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="galeria-placeholder">
+        <div class="ph-icon">🏃</div>
+        <p>Competencia U18</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-<h2>Entrenamiento</h2>
+<!-- ===== LOGROS ===== -->
+<section class="section section-dark" id="logros">
+  <p class="eyebrow reveal">04 — Trayectoria</p>
+  <h2 class="reveal">Logros Destacados</h2>
 
-<div class="card">
-<p><strong>👤 Entrenador:</strong> José Arturo Posada</p>
-<p style="margin-top: 10px;"><strong>🏃 Clubes:</strong> Todomed, The Jumpers Club</p>
-</div>
+  <div class="achievements">
+    <div class="achievement-item reveal">
+      <div class="achievement-emoji">🥇</div>
+      <p>Campeón Nacional U18<br><small>(2 veces)</small></p>
+    </div>
+    <div class="achievement-item reveal">
+      <div class="achievement-emoji">🥈</div>
+      <p>Subcampeón Juegos Nacionales Juveniles</p>
+    </div>
+    <div class="achievement-item reveal">
+      <div class="achievement-emoji">🥈</div>
+      <p>Subcampeón Interclubes U20</p>
+    </div>
+    <div class="achievement-item reveal">
+      <div class="achievement-emoji">📈</div>
+      <p>Marca Personal: 2.06 m</p>
+    </div>
+  </div>
+
+  <div class="card card-wide reveal" style="margin-top: 30px;">
+    <p><strong>👤 Entrenador:</strong> José Arturo Posada</p>
+    <p style="margin-top: 10px;"><strong>🏃 Clubes:</strong> Todomed, The Jumpers Club</p>
+  </div>
 </section>
 
-<section class="section">
-<h2>Contacto</h2>
+<!-- ===== FORMACIÓN ===== -->
+<section class="section" id="formacion">
+  <p class="eyebrow reveal">05 — Formación</p>
+  <h2 class="reveal">Formación Académica</h2>
 
-<div class="contact-grid">
-<div class="contact-item">
-<div class="contact-icon">📧</div>
-<div class="contact-label">Email</div>
-<a href="mailto:juanjosevasquez1313@gmail.com">juanjosevasquez1313@gmail.com</a>
-</div>
-<div class="contact-item">
-<div class="contact-icon">📱</div>
-<div class="contact-label">Instagram</div>
-<a href="https://instagram.com/juanvasquezhj" target="_blank">@juanvasquezhj</a>
-</div>
-</div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2023</div>
+      <div class="timeline-content">
+        <h3>Técnico Laboral por Competencias en Asistente en Programación de Software</h3>
+        <p>ITA Profesional – Universidad Pontificia Bolivariana (UPB)</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2023</div>
+      <div class="timeline-content">
+        <h3>Bachiller Técnico, especialidad en Informática</h3>
+        <p>Institución Educativa de Rozo</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-heading reveal">Certificaciones</h3>
+  <div class="cert-grid">
+    <div class="cert-item reveal">
+      <div class="cert-icon">📜</div>
+      <p>Certificado de Aptitud Laboral en Desarrollo de Software</p>
+    </div>
+    <div class="cert-item reveal">
+      <div class="cert-icon">📜</div>
+      <p>Certificado de Aptitud Ocupacional – Técnico Laboral por Competencias en Asistente en Programación de Software</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TÉCNICA Y CIENCIA ===== -->
+<section class="section section-dark" id="tecnica">
+  <p class="eyebrow reveal">06 — Mentalidad</p>
+  <h2 class="reveal">Técnica &amp; Ciencia del Salto</h2>
+  <p class="section-intro reveal">
+    Para mí el salto alto no es solo talento — es física aplicada. Cada ajuste de carrera, cada grado
+    de despegue, cada milisegundo de tensión en el arco dorsal (Fosbury Flop) se puede medir, entender
+    y mejorar.
+  </p>
+
+  <div class="tech-grid">
+    <div class="tech-card reveal">
+      <div class="tech-num">01</div>
+      <h3>Ángulo de despegue</h3>
+      <p>Trabajo el ángulo óptimo de aproximación (curva de 5-6 zancadas) para maximizar la conversión de velocidad horizontal en impulso vertical, sin perder velocidad de carrera.</p>
+    </div>
+    <div class="tech-card reveal">
+      <div class="tech-num">02</div>
+      <h3>Centro de masa</h3>
+      <p>El objetivo técnico del Fosbury Flop es que el centro de masa pase por debajo de la barra mientras el cuerpo pasa por encima — cuanto mejor el arco dorsal, menos altura "desperdiciada".</p>
+    </div>
+    <div class="tech-card reveal">
+      <div class="tech-num">03</div>
+      <h3>Fuerza reactiva</h3>
+      <p>El despegue depende de la fuerza reactiva de la pierna de batida en apenas ~0.15 segundos de contacto — de ahí el trabajo pliométrico y de potencia en cada bloque de entrenamiento.</p>
+    </div>
+    <div class="tech-card reveal">
+      <div class="tech-num">04</div>
+      <h3>Mentalidad de competencia</h3>
+      <p>Cada intento es un experimento controlado: ajusto una sola variable a la vez (marca de carrera, timing de brazos, ritmo de los últimos pasos) y evalúo el resultado con datos, no solo sensaciones.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== METAS / PRÓXIMOS PROYECTOS ===== -->
+<section class="section" id="metas">
+  <p class="eyebrow reveal">07 — Lo que viene</p>
+  <h2 class="reveal">Próximos Proyectos</h2>
+
+  <h3 class="sub-heading reveal">🏆 Deportivos</h3>
+  <div class="goal-grid">
+    <div class="goal-card goal-primary reveal">
+      <span class="goal-tag">Próxima competencia</span>
+      <h3>Campeonato Nacional Mayores</h3>
+      <p>Meta: romper la barrera de los <strong>2.10 m</strong> — mi próximo salto de nivel sobre mi PB actual de 2.06 m.</p>
+    </div>
+    <div class="goal-card reveal">
+      <span class="goal-tag">Meta mayor</span>
+      <h3>Récord Nacional U20</h3>
+      <p>Superar los <strong>2.19 m</strong> que hoy marcan el récord nacional en categoría U20.</p>
+    </div>
+    <div class="goal-card reveal">
+      <span class="goal-tag">Meta máxima</span>
+      <h3>Élite Mundial · Road to LA 2028</h3>
+      <p>Alcanzar entre <strong>2.20 m y 2.25 m</strong> de altura y competir al nivel de la élite mundial, con la mira puesta en Los Ángeles 2028.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-heading reveal">💻 Tecnológicos</h3>
+  <div class="goal-grid">
+    <div class="goal-card reveal">
+      <span class="goal-tag">En desarrollo</span>
+      <h3>Plataforma de registro y monitoreo</h3>
+      <p>Una web + app para registrar competencias, marcas y perfiles de atletas, y hacer seguimiento del rendimiento a lo largo del tiempo.</p>
+    </div>
+    <div class="goal-card reveal">
+      <span class="goal-tag">En desarrollo</span>
+      <h3>APIs y sistemas de optimización</h3>
+      <p>Construcción de APIs y sistemas propios que mejoren y optimicen procesos del día a día, aplicando lo aprendido en programación de software.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="section section-dark" id="contacto">
+  <p class="eyebrow reveal">08 — Hablemos</p>
+  <h2 class="reveal">Contacto</h2>
+
+  <div class="contact-grid">
+    <a href="mailto:juanjosevasquez1313@gmail.com" class="contact-item reveal">
+      <div class="contact-icon">📧</div>
+      <div class="contact-label">Email</div>
+      <span class="contact-value">juanjosevasquez1313@gmail.com</span>
+    </a>
+    <a href="https://instagram.com/juanvasquezhj" target="_blank" rel="noopener" class="contact-item reveal">
+      <div class="contact-icon">📱</div>
+      <div class="contact-label">Instagram</div>
+      <span class="contact-value">@juanvasquezhj</span>
+    </a>
+    <a href="https://www.linkedin.com/in/juan-jos%C3%A9-vasquez-giraldo-93b25b304/" target="_blank" rel="noopener" class="contact-item reveal">
+      <div class="contact-icon">💼</div>
+      <div class="contact-label">LinkedIn</div>
+      <span class="contact-value">Juan José Vásquez Giraldo</span>
+    </a>
+  </div>
 </section>
 
 <footer>
-<p>Juan Vásquez © 2026 | Atleta de Salto Alto 🇨🇴</p>
+  <p>Juan José Vásquez Giraldo © 2026 | Atleta de Salto Alto 🇨🇴</p>
 </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
 
 <script src="js/script.js"></script>
 
