@@ -34,43 +34,55 @@
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
-<header id="inicio">
-  <div class="hero-bg" aria-hidden="true">
-    <svg class="hero-arc" viewBox="0 0 1200 400" preserveAspectRatio="none">
-      <path class="arc-path" d="M -50 380 Q 400 -80 850 380" />
-    </svg>
-  </div>
+<!-- ===== HERO (scroll a través de imágenes) ===== -->
+<header id="inicio" class="hero-scroll">
+  <div class="hero-pin">
 
-  <div class="hero">
-    <p class="hero-eyebrow reveal">🇨🇴 Salto Alto · Atletismo</p>
-    <h1 class="reveal">Juan José Vásquez Giraldo</h1>
-    <h2 class="reveal">Aprendiendo a volar más alto</h2>
+    <div class="hero-images" id="heroImages" aria-hidden="true">
+      <!-- Capa 1: foto de galería ya existente -->
+      <img class="hero-img-layer" src="assets/images/podio_u23.jpeg" alt=""
+           onerror="this.style.visibility='hidden'">
+      <!-- Capa 2: foto de galería ya existente -->
+      <img class="hero-img-layer" src="assets/images/u18.jpeg" alt=""
+           onerror="this.style.visibility='hidden'">
+      <!-- Capa 3: NUEVA — reemplaza este archivo por una foto tuya distinta -->
+      <img class="hero-img-layer" src="assets/images/hero-nueva.jpg" alt=""
+           onerror="this.style.visibility='hidden'">
+    </div>
 
-    <div class="stats reveal">
-      <div class="stat-item">
-        <div class="stat-value" data-count="2.06" data-decimals="2">0</div>
-        <div class="stat-label">Marca Personal (m)</div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero">
+      <p class="hero-eyebrow reveal">🇨🇴 Salto Alto · Atletismo</p>
+      <h1 class="reveal">Juan José Vásquez Giraldo</h1>
+      <h2 class="reveal">Aprendiendo a volar más alto</h2>
+
+      <div class="stats reveal">
+        <div class="stat-item">
+          <div class="stat-value" data-count="2.06" data-decimals="2">0</div>
+          <div class="stat-label">Marca Personal (m)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="2.01" data-decimals="2">0</div>
+          <div class="stat-label">Estatura (m)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="19" data-decimals="0">0</div>
+          <div class="stat-label">Años</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value-static">16/02/07</div>
+          <div class="stat-label">Nacimiento</div>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-value" data-count="2.01" data-decimals="2">0</div>
-        <div class="stat-label">Estatura (m)</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-value" data-count="19" data-decimals="0">0</div>
-        <div class="stat-label">Años</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-value-static">16/02/07</div>
-        <div class="stat-label">Nacimiento</div>
+
+      <p class="quote reveal">"Aprendiendo a volar más alto" ✈️</p>
+
+      <div class="scroll-cue reveal" aria-hidden="true">
+        <span></span>
       </div>
     </div>
 
-    <p class="quote reveal">"Aprendiendo a volar más alto" ✈️</p>
-
-    <a href="#progresion" class="scroll-cue reveal" aria-label="Ir a progresión">
-      <span></span>
-    </a>
   </div>
 </header>
 
